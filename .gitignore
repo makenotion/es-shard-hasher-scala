@@ -43,3 +43,7 @@ bin/
 
 #general
 *.class
+
+
+*.csv
+*.txt

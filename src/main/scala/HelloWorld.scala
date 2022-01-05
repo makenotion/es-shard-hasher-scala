@@ -2,7 +2,6 @@ import org.elasticsearch.Version
 import org.elasticsearch.cluster.metadata.IndexMetaData;
 import org.elasticsearch.common.settings.Settings
 import org.elasticsearch.cluster.routing.OperationRouting
-import org.elasticsearch.cluster.routing.OperationRouting2
 import org.elasticsearch.cluster.routing.Murmur3HashFunction
 import scala.io.Source
 
