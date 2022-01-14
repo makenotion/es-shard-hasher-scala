@@ -29,7 +29,7 @@ object Hello {
     for (line <- Source.fromFile(filename).getLines) {
       val shardId =
         OperationRouting.generateShardId(metaData, "1sfsdf234", line);
-      if (shardId == 142) {
+      if (shardId == 467) {
         println(line)
         pw.write(line)
         pw.write("\n")
@@ -37,30 +37,5 @@ object Hello {
 
     }
     pw.close
-
-    // println(
-    //   "Hello, world",
-    //   metaData.getRoutingFactor(),
-    //   metaData.isRoutingPartitionedIndex(),
-    //   metaData.getRoutingNumShards(),
-    //   metaData.getRoutingPartitionSize()
-    // )
-
-    // val workspaceId = "cfef20fc-56fd-4f46-a1c5-3d550c3daa30"
-    // val shardId =
-    //   OperationRouting2.generateShardId(metaData, "1sfsdf234", workspaceId);
-
-    // val hash = Murmur3HashFunction.hash(workspaceId)
-    // println(hash)
-
-    // // we don't use IMD#getNumberOfShards since the index might have been shrunk such that we need to use the size
-    // // of original index to hash documents
-    // val shardId2 = Math.floorMod(
-    //   hash,
-    //   512
-    // )
-
-    // println(workspaceId, shardId, shardId2)
-
   }
 }
